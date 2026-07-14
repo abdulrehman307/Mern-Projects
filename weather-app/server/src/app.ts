@@ -10,7 +10,12 @@ import favoritesRoutes from './routes/favorites.routes';
 const app = express();
 
 // ─── Middleware ────────────────────────────────────────────────────────────────
-app.use(cors({ origin: env.CLIENT_URL, credentials: true }));
+
+app.use(cors({
+  origin: "https://nimbus-weather-rho.vercel.app", // Aapka exact Vercel URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(express.json());
 app.use(globalLimiter);
 
