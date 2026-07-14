@@ -38,7 +38,7 @@ export function Dashboard({
   todayHours,
 }: DashboardProps) {
   // Determine city name for SEO
-  const locationName = data ? `${data.location.name}, ${data.location.country}` : 'Dashboard';
+  const _locationName = data ? `${data.location.name}, ${data.location.country}` : 'Dashboard';
 
   return (
     <>
