@@ -1,6 +1,6 @@
 /** Temperature unit used throughout the app */
 export const DEFAULT_CITY = 'London';
-export const API_BASE_URL = 'http://localhost:5000';
+export const API_BASE_URL = 'https://nimbus-weather-backend.onrender.com';
 export const REFETCH_INTERVAL_MS = 10 * 60 * 1000; // 10 minutes
 export const DEBOUNCE_DELAY_MS = 300;
 export const SESSION_ID_KEY = 'weather_app_session_id';
