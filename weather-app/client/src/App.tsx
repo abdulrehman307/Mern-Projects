@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Toaster } from 'sonner';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { useThemeStore } from './store/themeStore';
 import { useGeolocation } from './hooks/useGeolocation';
 import { useWeather } from './hooks/useWeather';
@@ -125,6 +127,12 @@ function App() {
       </main>
 
       <Footer />
+      
+      {/* Vercel Web Analytics */}
+      <Analytics />
+      
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
